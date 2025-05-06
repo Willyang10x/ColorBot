@@ -5,6 +5,7 @@ seletorCor.addEventListener("input", () => {
   gerarPaleta(seletorCor.value);
 });
 
+
 function gerarPaleta(hex) {
   areaPaleta.innerHTML = "";
 

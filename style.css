@@ -37,17 +37,36 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+
 input[type="color"] {
   margin: 1rem 0;
   width: 100px;
   height: 50px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 12px;
   padding: 0;
-  background-color: #fff;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  overflow: hidden;
   box-shadow: 0 0 0 2px #ffffff, 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 12px;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 12px;
+}
+
 
 .paleta {
   display: grid;
@@ -76,6 +95,7 @@ input[type="color"] {
 .caixa-cor button:hover {
   background: rgba(255,255,255,0.3);
 }
+
 
 footer {
   padding: 2rem 1rem;
@@ -137,42 +157,12 @@ footer {
   transform: scale(1.2);
 }
 
-.newsletter form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.newsletter input {
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.newsletter button {
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  background: #00bcd4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 300px;
-}
-
-.newsletter button:hover {
-  background: #0097a7;
-}
-
 .direitos {
   text-align: center;
   font-size: 0.8rem;
   color: #ffffff;
 }
+
 
 @media (max-width: 768px) {
   h1 {
@@ -199,7 +189,10 @@ footer {
     padding: 1rem 0;
   }
 
-  .newsletter input,
+  .newsletter input {
+    width: 100%;
+  }
+
   .newsletter button {
     width: 100%;
   }
