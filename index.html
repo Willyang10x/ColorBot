@@ -4,58 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ColorBot - Paleta de Cores</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="colorbot-logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <img src="logo-wg.png" alt="Logo WG" class="logo" />
-    <h1>ColorBot</h1>
-    <p>Gere uma paleta de cores a partir de uma cor base</p>
-    <input type="color" id="seletorCor" value="#049be2" />
-    <div id="paleta" class="paleta"></div>
-  </div>
-  <script src="script.js"></script>
+  <div class="main-wrapper">
+    <div class="container">
+      <header>
+        <img src="logo-wg.png" alt="Logo WG" class="logo" />
+        <h1>ColorBot</h1>
+        <p>Crie paletas profissionais com inteligência visual</p>
+      </header>
 
+      <div class="picker-section">
+        <label for="seletorCor" class="color-label">Escolha sua cor base</label>
+        <input type="color" id="seletorCor" value="#049be2" />
+      </div>
+
+      <div id="paleta" class="paleta"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Cor copiada com sucesso!</div>
 
   <footer>
     <div class="container-rodape">
-  
       <div class="logo-rodape">
-        <a href="#" style="text-decoration: none; color: inherit;">
+        <a href="#">
           <img src="logo-wg.png" alt="Logo WG" class="logo-img">
           <p class="descricao-empresa">Criando designs únicos e experiências visuais.</p>
         </a>
       </div>
-  
       <div class="info-contato">
-        <p><strong>Entre em contato:</strong></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:willyangabrielfxt@gmail.com">willyangabrielfxt@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i> <a href="tel:+5583988688864">+55 83 98868-8864</a></p>
+        <p><strong>Contato</strong></p>
+        <a href="mailto:willyangabrielfxt@gmail.com"><i class="fas fa-envelope"></i> willyangabrielfxt@gmail.com</a>
+        <a href="tel:+5583988688864"><i class="fas fa-phone"></i> +55 83 98868-8864</a>
       </div>
-  
-      
-  
       <div class="redes-sociais">
-        <p><strong>Me siga nas redes sociais:</strong></p>
-        <a href="https://github.com/Willyang10x" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/willdsg07/" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/willyan-gabriel-70b53b344" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <p><strong>Siga-me</strong></p>
+        <div class="social-icons">
+          <a href="https://github.com/Willyang10x" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/willdsg07/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/willyan-gabriel-70b53b344" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
-  
       <div class="direitos">
-        <p>&copy; 2025 WG - Designer. Todos os direitos reservados.</p>
+        <p>&copy; 2026 WG - Designer. Todos os direitos reservados.</p>
       </div>
-  
     </div>
-</footer>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
